@@ -42,7 +42,7 @@ stage('Hello3') {
         }
 
 
-node{
+
     stage("test"){
         sh "ipconfig"
     }
