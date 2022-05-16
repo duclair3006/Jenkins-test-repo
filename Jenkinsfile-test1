@@ -4,26 +4,40 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+             sh '''
+             ls
+             pwd
+             touch eric
+             '''
             }
         }
 
 stage('Hello1') {
             steps {
-                echo 'Hello World'
+             sh '''
+             uname -r
+             free
+             '''
             }
         }
 
 stage('Hello2') {
             steps {
-                echo 'Hello World'
+             sh '''
+              top
+              nproc
+             '''
             }
         }
 
 
 stage('Hello3') {
             steps {
-                echo 'Hello World'
+             sh '''
+             ls -a
+             ls -l
+             mkdir qwerty
+             '''
             }
         }
 
