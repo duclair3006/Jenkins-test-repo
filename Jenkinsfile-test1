@@ -43,10 +43,6 @@ stage('Hello3') {
 
 
 
-    stage("test"){
-        steps {
-        sh "ipconfig"
-    }
 
 
 
